@@ -117,7 +117,7 @@ a:hover {
     display: flex;
 }
 
-.action__login,
+.header-action__login,
 .navbar__link {
     display: inline-block;
     padding: 8px 21px;
@@ -151,7 +151,64 @@ a:hover {
     background: #fff;
 }
 
-.action__signup {
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__signup {
     --height: 44px;
     min-width: 104px;
+    margin-left: 7px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    margin-top: 76px;
+}
+
+.hero__content {
+    width: 44%;
+    /* Tranh truong hop hinh size to chua chinh se chiem vi tri va lam co phan content lai */
+    flex-shrink: 0;
+}
+
+.hero__media {
+    /* Vi head__content co width 44% roi thi flex-grow de hero__media
+        chiem toan bo phan con lai */
+    flex-grow: 1;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    /* ↑：vi trong hero__row the a va the span la 2 the inline, no se co
+        1 khoang trang o giua nen dung nay de mat khoang trang do di */
+    margin-top: 38px;
+}
+
+.hero__row span {
+    margin-left: 38px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #ffffff;
 }
