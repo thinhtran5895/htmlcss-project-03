@@ -397,3 +397,47 @@ a:hover {
     line-height: 1.75;
     color: #2e80ce;
 }
+
+/* feature */
+.feature {
+    padding: 85px;
+    margin-top: 85px;
+}
+
+.feature__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature__media {
+    width: 48%;
+}
+
+.feature__images {
+    position: relative;
+    padding: 0 58px 121px 0;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.feature__img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 332px;
+    height: 370px;
+}
+
+.feature__content {
+    width: 40%;
+}
+
+.feature__content-cta {
+    margin-top: 38px;
+}
